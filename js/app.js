@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
             yogaList.innerHTML = `
                 <ion-item>
                     <ion-label>
-                        <h2>${isEnglish ? 'No yoga poses match your criteria' : '沒有符合條件的瑜伽動作'}</h2>
+                        <h2>${isEnglish ? 'No yoga poses match your criteria' : '沒有符合條件的結果'}</h2>
                         <p>${isEnglish ? 'Please try other search criteria' : '請嘗試其他搜尋條件'}</p>
                     </ion-label>
                 </ion-item>
