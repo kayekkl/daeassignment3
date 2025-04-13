@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // 處理 placeholder 屬性
         document.querySelectorAll('[data-en-placeholder]').forEach(el => {
-            el.setAttribute('placeholder', isEnglish ? el.getAttribute('data-en-placeholder') : el.getAttribute('data-zh-placeholder') || '搜尋瑜伽動作');
+            el.setAttribute('placeholder', isEnglish ? el.getAttribute('data-en-placeholder') : el.getAttribute('data-zh-placeholder') || '搜尋開源硬體');
         });
         
         // 處理返回按鈕文字

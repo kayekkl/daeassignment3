@@ -1,4 +1,4 @@
-// 瑜伽動作資料
+// 開源硬體資料
 const yogaPoses = [
     {
         id: 1,
@@ -233,7 +233,7 @@ const difficultyMap = {
 const effectTags = {
     'strength': '增強力量',
     'flexibility': '提升柔軟度',
-    'balance': '改善平衡',
+    'balance': '開源硬體',
     'relax': '放鬆減壓'
 };
 
@@ -241,22 +241,10 @@ const effectTags = {
 yogaPoses.forEach(pose => {
     pose.effectTags = [];
     
-    if (pose.effect.includes('強化') || pose.effect.includes('力量')) {
-        pose.effectTags.push('strength');
-    }
-    
-    if (pose.effect.includes('伸展') || pose.effect.includes('靈活性') || pose.effect.includes('柔軟')) {
-        pose.effectTags.push('flexibility');
-    }
-    
     if (pose.effect.includes('平衡')) {
         pose.effectTags.push('balance');
     }
-    
-    if (pose.effect.includes('放鬆') || pose.effect.includes('舒緩') || pose.effect.includes('減壓')) {
-        pose.effectTags.push('relax');
-    }
-    
+
     // 如果沒有標籤，添加一個預設標籤
     if (pose.effectTags.length === 0) {
         pose.effectTags.push('balance');
