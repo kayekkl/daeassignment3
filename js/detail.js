@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 設置為全局可訪問的函數，用於語言切換後更新內容
     window.updateYogaPoseDetails = updateYogaPoseDetails;
     
-    // 更新詳細信息的函數
+    // 更新瑜伽動作詳細信息的函數
     function updateYogaPoseDetails() {
         // 更新頁面標題
         document.title = `${yogaPose.name} | ${yogaPose.name_en} - 瑜伽動作詳細資訊 | Yoga Pose Details`;
