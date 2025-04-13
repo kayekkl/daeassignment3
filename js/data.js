@@ -233,7 +233,7 @@ const difficultyMap = {
 const effectTags = {
     'strength': '增強力量',
     'flexibility': '提升柔軟度',
-    'balance': '開源硬體',
+    'hardware': '開源硬體',
     'relax': '放鬆減壓'
 };
 
@@ -241,12 +241,12 @@ const effectTags = {
 yogaPoses.forEach(pose => {
     pose.effectTags = [];
     
-    if (pose.effect.includes('平衡')) {
-        pose.effectTags.push('balance');
+    if (pose.effect.includes('硬體')) {
+        pose.effectTags.push('hardware');
     }
 
     // 如果沒有標籤，添加一個預設標籤
     if (pose.effectTags.length === 0) {
-        pose.effectTags.push('balance');
+        pose.effectTags.push('hardware');
     }
 }); 
